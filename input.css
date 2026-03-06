@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h1-post {
+    @apply text-3xl font-bold;
+}
+
+.h2-post {
+    @apply text-2xl font-semibold;
+}
+
+.h2-post {
+    @apply text-2xl font-semibold;
+}
+
+.h2-post {
+    @apply text-2xl font-semibold;
+}
+
+.summary-post {
+    @apply mx-10 lg:mx-16 text-center text-xl italic text-slate-500 mb-6;
+}
+
+.main-text-post {
+    @apply text-lg;
+}
+
+.linkedin-icon {
+  fill: #0077B5;
+  transition: fill 0.2s;
+}
+
+.linkedin-icon:hover {
+  fill: #1fa5e9; /* or whatever color you want */
+}

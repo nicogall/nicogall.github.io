@@ -1,0 +1,23 @@
+---
+layout: page
+---
+
+<section>
+  <div class="inline-block">
+    <h1 class="text-3xl text-slate-700 font-bold border-slate-400 border-b-2 pb-2">{{ page.title }}</h1>
+
+  </div>
+  <div class="flex items-center gap-2">
+    <p class="text-slate-600 text-md mt-2 italic">Published on {{ page.date | date: "%Y-%m-%d" }} </p>
+  </div>
+</section>
+
+<article class="mt-4">
+  {% if page.summary %}
+    <p class="summary-post">{{ page.summary }}</p>
+  {% endif %}
+
+  <div class="main-text-post">
+    {{ content }}
+  </div>
+</article>

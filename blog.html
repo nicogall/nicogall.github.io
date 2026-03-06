@@ -1,0 +1,21 @@
+---
+layout: page
+title: About
+permalink: /thoughts
+date: YYYY-MM
+---
+
+<section>
+    <div class="flex justify-center items-center">
+        <h1 class="text-3xl text-slate-700 text-center font-bold">Thoughts</h1>
+    </div>
+    <div class="mt-6 flex justify-center items-center">
+        <ul>
+            {% for post in site.posts %}
+              <li class="my-4">
+                <a href="{{ post.url }}" class="group text-xl text-slate-500 transition duration-300 focus:underline hover:underline underline-offset-8">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</post></a>
+              </li>
+            {% endfor %}
+          </ul>
+    </div>
+</section>
